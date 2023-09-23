@@ -14,6 +14,7 @@ import { DetailComponent } from './components/detail/detail.component';
 import { ListComponent } from './components/list/list.component';
 import { MainComponent } from './components/main/main.component';
 import { CardComponent } from './components/card/card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -34,7 +35,8 @@ import { CardComponent } from './components/card/card.component';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
 ],
   providers: [],
   bootstrap: [AppComponent]

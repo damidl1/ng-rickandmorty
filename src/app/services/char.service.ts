@@ -19,6 +19,7 @@ export class CharService {
   getAllChars(): Observable<Character[]>{
 
     return this.http.get<any>(this.BASE_URL).pipe(
+      tap(charObj => console.log(charObj)),
       map(charObj => charObj.results),
       catchError(err => {
         console.log(err);

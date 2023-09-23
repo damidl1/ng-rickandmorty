@@ -16,7 +16,7 @@ export class ListComponent implements OnInit{
   constructor(private charServ: CharService, private router: Router){}
 
   ngOnInit(): void {
-    this.charServ.getAllChars().subscribe(data => this.chars = data);
+    this.charServ.getAllChars().subscribe(charData => this.chars = charData);
 
   }
 
