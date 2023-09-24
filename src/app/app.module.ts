@@ -15,6 +15,7 @@ import { ListComponent } from './components/list/list.component';
 import { MainComponent } from './components/main/main.component';
 import { CardComponent } from './components/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PaginationService } from './shared-services/pagination.service';
 
 
 
@@ -38,7 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     HttpClientModule
 ],
-  providers: [],
+  providers: [PaginationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

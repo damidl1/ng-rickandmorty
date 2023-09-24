@@ -1,13 +1,18 @@
 <mat-toolbar color="primary">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
+
+    <a routerLink="/home">
+      <mat-icon>home</mat-icon>
+    </a>
+
   </button>
   <span>Rick and Morty Viewer</span>
   <span class="spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
+  <button mat-icon-button (click)="prevPage()">
+    <mat-icon>arrow_left</mat-icon>
+
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
+  <button mat-icon-button (click)="nextPage()">
+    <mat-icon>arrow_right</mat-icon>
   </button>
 </mat-toolbar>
