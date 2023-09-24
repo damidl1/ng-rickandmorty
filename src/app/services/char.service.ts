@@ -33,7 +33,7 @@ export class CharService {
 
 
   getAllChars(): Observable<Character[]>{
-    const url = `${this.BASE_URL}?page=${this.pagServ.currentPage}`;
+    const url = `${this.BASE_URL}${this.pagServ.currentPage}`;
 
     return this.http.get<any>(url).pipe(
       tap(charObj => console.log(charObj)),

@@ -14,11 +14,13 @@ export class HeaderComponent {
   nextPage(){
     console.log('next page')
     this.pagServ.nextPage();
+    this.pagServ.setCurrentPage(this.pagServ.currentPage);
 
   }
 
   prevPage(){
     console.log('prev page')
     this.pagServ.prevPage();
+    this.pagServ.setCurrentPage(this.pagServ.currentPage);
   }
 }
