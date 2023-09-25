@@ -1,11 +1,13 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
 
-    <a routerLink="/home">
+
+  <a routerLink="/home">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>home</mat-icon>
-    </a>
+    </button>
+  </a>
 
-  </button>
+
   <span>Rick and Morty Viewer</span>
   <span class="spacer"></span>
   <button mat-icon-button (click)="prevPage()">
