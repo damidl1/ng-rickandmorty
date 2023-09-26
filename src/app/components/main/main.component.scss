@@ -1,0 +1,27 @@
+.open-link:visited{
+  color: white;
+
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.home-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: xx-large;
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 300px;
+}

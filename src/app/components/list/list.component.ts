@@ -14,10 +14,10 @@ export class ListComponent implements OnInit{
 
   chars: Character[] = [];
 
-  constructor(private charServ: CharService, private router: Router, public pagServ: PaginationService){}
+  constructor(private charServ: CharService, private router: Router){}
 
   ngOnInit(): void {
-    this.charServ.getAllChars().subscribe(charData => this.chars = charData);
+    this.charServ.allCharacters.subscribe(characters => this.chars = characters);
 
   }
 

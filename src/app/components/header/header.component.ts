@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CharService } from 'src/app/services/char.service';
 import { PaginationService } from 'src/app/shared-services/pagination.service';
 
 
@@ -9,18 +10,15 @@ import { PaginationService } from 'src/app/shared-services/pagination.service';
 })
 export class HeaderComponent {
 
-  constructor(public pagServ: PaginationService){}
+  constructor(public charServ: CharService){}
 
   nextPage(){
-    console.log('next page')
-    this.pagServ.nextPage();
-    this.pagServ.setCurrentPage(this.pagServ.currentPage);
+    this.charServ.nextPage();
 
   }
 
   prevPage(){
-    console.log('prev page')
-    this.pagServ.prevPage();
-    this.pagServ.setCurrentPage(this.pagServ.currentPage);
+   this.charServ.prevPage();
   }
+
 }

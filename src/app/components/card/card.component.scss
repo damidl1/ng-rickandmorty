@@ -1,11 +1,22 @@
-.card-wrapper {
-  width: 700px;
-  max-height: 500px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.card{
+  background-color: #515151;
 }
 
-.card-img{
-  width: 200px;
+
+.card-image{
+  object-fit: cover;
+  object-position: center center;
+  height: 360px;
+}
+
+.card-title{
+  color: white;
+  padding: 0px !important;
+  font-size: large;
+}
+
+
+.card-subtitle{
+  color: white;
+  padding: 0px !important;
 }

@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
 
 
-  <a routerLink="/home">
+  <a class="home-link" routerLink="/home">
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>home</mat-icon>
     </button>
@@ -11,10 +11,10 @@
   <span>Rick and Morty Viewer</span>
   <span class="spacer"></span>
   <button mat-icon-button (click)="prevPage()">
-    <mat-icon>arrow_left</mat-icon>
-
+    <mat-icon>arrow_back_ios</mat-icon>
   </button>
+  <span>Page: {{charServ.pageNumber}}</span>
   <button mat-icon-button (click)="nextPage()">
-    <mat-icon>arrow_right</mat-icon>
+    <mat-icon>arrow_forward_ios</mat-icon>
   </button>
 </mat-toolbar>
